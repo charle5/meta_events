@@ -1,4 +1,5 @@
 module MetaEvents
+  require 'spring/watcher'
   class Railtie < Rails::Railtie
     def say(x)
       ::Rails.logger.info "MetaEvents: #{x}"
